@@ -9,15 +9,22 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatCardModule} from '@angular/material/card';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatListModule} from '@angular/material/list'
 
 import { HeaderComponent } from './components/header/header.component';
 import { ContentTabComponent } from './components/content-tab/content-tab.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { AboutComponent } from './components/main-contents/about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ContentTabComponent
+    ContentTabComponent,
+    FooterComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +33,10 @@ import { ContentTabComponent } from './components/content-tab/content-tab.compon
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    MatTabsModule
+    MatTabsModule,
+    MatCardModule,
+    MatDividerModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

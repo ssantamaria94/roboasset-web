@@ -1,0 +1,70 @@
+.main-title{
+    padding: 20px 0;
+
+    h1{
+        width: 65%;
+    }
+}
+
+.why-veggieweb-section{
+    background: #3f51b5;
+    background-image: url("https://cdn.pixabay.com/photo/2015/09/18/11/36/plantation-945400_960_720.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:20px 0;
+    padding: 30px 30px;
+    h2{
+        color: #FFF;
+    }
+}
+
+.why-veggieweb-reasons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    padding: 20px 0;
+}
+
+.home-item{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+
+    img{
+        height: 200px;
+        object-fit: cover;
+    }
+}
+
+.ready-to-section{
+    padding: 50px;
+    margin:20px 0;
+    background-image: url("https://cdn.pixabay.com/photo/2015/07/02/10/19/bamboo-828703_960_720.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media(max-width:900px){
+    .why-veggieweb-reasons{
+        grid-template-columns: repeat(2, 1fr);
+    }
+ }
+
+ @media(max-width:450px){
+    .why-veggieweb-reasons{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .main-title{
+
+        h1{
+            width: 100%;
+        }
+    }
+
+    .home-item{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
