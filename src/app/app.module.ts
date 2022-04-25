@@ -12,11 +12,16 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatCardModule} from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list'
+import { FlexLayoutModule } from '@angular/flex-layout';
+import {MatTableModule} from '@angular/material/table'; 
 
 import { HeaderComponent } from './components/header/header.component';
 import { ContentTabComponent } from './components/content-tab/content-tab.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AboutComponent } from './components/main-contents/about/about.component';
+import { PublicationsComponent } from './components/main-contents/publications/publications.component';
+import { PeopleComponent } from './components/main-contents/people/people.component';
+import { EventsComponent } from './components/main-contents/events/events.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +29,10 @@ import { AboutComponent } from './components/main-contents/about/about.component
     HeaderComponent,
     ContentTabComponent,
     FooterComponent,
-    AboutComponent
+    AboutComponent,
+    PublicationsComponent,
+    PeopleComponent,
+    EventsComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +44,9 @@ import { AboutComponent } from './components/main-contents/about/about.component
     MatTabsModule,
     MatCardModule,
     MatDividerModule,
-    MatListModule
+    MatListModule,
+    FlexLayoutModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

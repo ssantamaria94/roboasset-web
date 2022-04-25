@@ -1,0 +1,33 @@
+<div
+  fxLayout="column"
+  fxLayoutAlign="flex-start stretch"
+  class="content-section"
+>
+  <!--<div
+    fxLayout="column"
+    fxLayoutAlign="center flex-start"
+    class="main-title horizontal-padding"
+  >
+    <h1 class="mat-display-3">Roboasset</h1>
+  </div> -->
+  <div></div>
+  <div
+    fxLayout="column"
+    fxLayoutAlign="flex-start stretch"
+    class="why-veggieweb-section"
+  >
+  
+  <div fxLayout="column" fxLayoutAlign="center center" class="ready-to-section" *ngFor="let item of publications">
+    <mat-card fxFlex="nogrow" class="publication-card"> 
+        <mat-card-header class="text_center">
+            <mat-card-title >{{item.title}}</mat-card-title>
+            <mat-card-subtitle >{{item.authors}}</mat-card-subtitle>
+        </mat-card-header>
+      <mat-card-content>
+        <p class="text-justify">
+            {{item.abstract}}
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
