@@ -20,8 +20,8 @@
   <div fxLayout="column" fxLayoutAlign="center center" class="ready-to-section" *ngFor="let item of publications">
     <mat-card fxFlex="nogrow" class="publication-card"> 
         <mat-card-header class="text_center">
-            <mat-card-title >{{item.title}}</mat-card-title>
-            <mat-card-subtitle >{{item.authors}}</mat-card-subtitle>
+            <mat-card-title ><a href={{item.url}}>{{item.title}}</a></mat-card-title>
+            <mat-card-subtitle class="text_center">{{item.authors}}</mat-card-subtitle>
         </mat-card-header>
       <mat-card-content>
         <p class="text-justify">

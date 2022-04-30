@@ -2,6 +2,10 @@ example-spacer {
   flex: 1 1 auto;
 }
 
+.header{
+  min-height: 17.5%;
+}
+
 mat-toolbar {
   height: 130px;
   display: flex;
@@ -25,6 +29,7 @@ button {
 span {
   align-self: center;
   padding: 2%;
+  font-size: 44px;
 }
 
 #carlos{
@@ -97,6 +102,18 @@ img {
   width: 100%;
 }
 
+@media (max-width: 1500px) {
+  span{
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1175px) {
+  span{
+    font-size: 20px;
+  }
+}
+
 @media (max-width: 600px) {
   button {
     width: 50%;
@@ -112,6 +129,8 @@ img {
     max-width: 207px;
     min-width: 110px;
   }
+
+
 
 }
 

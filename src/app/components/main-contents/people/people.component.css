@@ -19,3 +19,11 @@ mat-toolbar {
     margin-top: 5px;
     margin-left: 5px; /* optional */
 }
+
+.mat-card-subtitle{
+    height: 60px;
+}
+
+.mat-card-content{
+    height: 250px;
+}
